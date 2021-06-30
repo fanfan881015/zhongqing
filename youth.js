@@ -58,8 +58,8 @@ myuid= cookie[__Oxb5591[0x12]](/uid=\d+/); await userInfo();nick= nick?nick:null
   } else {
     zqAc = [];
       // 兼容旧配置
-      $.zqCount = ($.zqCount = ($.getval('zqCount') || '1') - 1) > 0 ? $.zqCount + 1 : 1; // 执行任务的账号个数
-      for (let index = 1; index <= $.zqCount; index++) {
+      $.zqCount = ($.zqCount = ($.getval('zqCount') || '2') - 1) > 0 ? $.zqCount + 1 : 1; // 执行任务的账号个数
+      for (let index = 2; index <= $.zqCount; index++) {
         zqAc.push(index + '');
       }
   }
