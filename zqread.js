@@ -41,7 +41,7 @@ const readMode = parseInt(rmArr[0]) || 0;
   if ($.isRewrite) {
     // 重写请求截取数据
     $.idx = $.suffix(($.getval('zqSuffix') || '1') - 1); // 抓包账号扩展字符
-    $.acName = $.name + ($.idx || '1');
+    $.acName = $.name + ($.idx || '2');
     await getRequestData();
   } else if ($.isTask) { // 定时任务处理
     // 根据执行环境所在时区的时间，获得北京时间戳
